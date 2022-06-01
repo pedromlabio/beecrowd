@@ -11,11 +11,11 @@ def criarMatriz():
 
 def somar(matriz):
     soma = 0
-    for i in range(5):
-        for j in range(i + 1, 6):
+    for i in range(11, 6, -1):
+        for j in range(12 - i, 6):
             soma += matriz[i][j]
-    for i in range(5):
-        for j in range(6 ,11 - i):
+    for i in range(7, 12):
+        for j in range(i - 1, 5, -1):
             soma += matriz[i][j]
     return soma
 
