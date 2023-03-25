@@ -54,12 +54,39 @@ def decomporValor(valor):
 
     return lista
 
+def imprimirValores(valores):
+
+    print(f"NOTAS:")
+    print(f"{valores[0]} nota(s) de R$ 100.00")
+    print(f"{valores[1]} nota(s) de R$ 50.00")
+    print(f"{valores[2]} nota(s) de R$ 20.00")
+    print(f"{valores[3]} nota(s) de R$ 10.00")
+    print(f"{valores[4]} nota(s) de R$ 5.00")
+    print(f"{valores[5]} nota(s) de R$ 2.00")
+
+    print(f"MOEDAS:")
+    print(f"{valores[6]} moeda(s) de R$ 1.00")
+    print(f"{valores[7]} moeda(s) de R$ 0.50")
+    print(f"{valores[8]} moeda(s) de R$ 0.25")
+    print(f"{valores[9]} moeda(s) de R$ 0.10")
+    print(f"{valores[10]} moeda(s) de R$ 0.05")
+    print(f"{valores[11]} moeda(s) de R$ 0.01")
+
+def tratarValores(valores):
+    valoresTratados = []
+    for i in valores:
+        i = int(i)
+        valoresTratados.append(i)
+
+
+    return valoresTratados
+
 def main():
 
     valor = float(input())
 
     valores = decomporValor(valor)
-
+    valores = tratarValores(valores)
     imprimirValores(valores)
 
     return 0
