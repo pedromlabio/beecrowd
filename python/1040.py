@@ -33,7 +33,7 @@ def main():
     elif media < 5:
         print("Aluno reprovado.")
     else:
-        print("Aluno em exame")
+        print("Aluno em exame.")
         aplicarExame(media)
 
 
