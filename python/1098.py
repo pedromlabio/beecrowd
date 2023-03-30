@@ -7,5 +7,5 @@ def main():
             else:
                 print(f"I={i / 10} J={j + (i / 10)}")
 
-
 main()
+
